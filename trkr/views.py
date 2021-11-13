@@ -227,7 +227,7 @@ def report(request):
     email = EmailMessage(
         'Client Report',
         'See list of all clients attached in the PDF file.',
-        'from@example.com',
+        'dele4551@gmail.com',
         [email_addr],
         reply_to=['another@example.com'],
         headers={'Message-ID': 'foo'},
