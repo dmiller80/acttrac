@@ -30,7 +30,7 @@ def client_edit(request, pk):
         # update
         form = ClientForm(request.POST, instance=client)
         if form.is_valid():
-            c_date = form.cleaned_date["date"]
+            c_date = form.cleaned_data["date"]
             client = form.save(commit=False)
             client.birth_date = c_date
             client.updated_date = timezone.now()

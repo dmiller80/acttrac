@@ -5,7 +5,7 @@ class ClientForm(forms.ModelForm):
     class Meta:
         model = Client
         fields = ('name', 'nick_name', 'address', 'city', 'state', 'zipcode', 'email', 'cell_phone',
-                   )
+                  )
     date = forms.DateField(
         widget=forms.TextInput(attrs={'type': 'date'}))
 
